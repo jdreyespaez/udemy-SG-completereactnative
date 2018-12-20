@@ -5,11 +5,9 @@ import Header from './src/components/header';
 
 
 // Create a component
-const App = () => {
-    return (
+const App = () => (
         <Header />
     );
-};
 
 // Render it to the device
 // App as the root component is the only one using AppRegistry
