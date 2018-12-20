@@ -18,7 +18,16 @@ const Header = () => {
 // By convention styles will go as an object after the component
 const styles = {
     viewStyle: {
-        backgroundColor: '#f8f8f8'
+        backgroundColor: '#f8f8f8',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: 90,
+        paddingTop: 15,
+        shadowColor: '#ff0000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.2,
+        elevation: 2,
+        position: 'relative'
     },
     textStyle: {
         fontSize: 20
