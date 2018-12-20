@@ -1,18 +1,25 @@
 // First step: import libraries
 import React from 'react';
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
 
 // Second step: create the component
 // The name of the function will be the same as the component
 const Header = () => {
-    const { textStyle } = styles;
+    const { textStyle, viewStyle } = styles;
 
-    // style is a prop
-    return <Text style={textStyle}>Albums!</Text>;
+    // style is used as a prop
+    return (
+        <View style={viewStyle}> 
+            <Text style={textStyle}>Albums!</Text>
+        </View>
+    );
 };
 
 // By convention styles will go as an object after the component
 const styles = {
+    viewStyle: {
+        backgroundColor: '#f8f8f8'
+    },
     textStyle: {
         fontSize: 20
     }
