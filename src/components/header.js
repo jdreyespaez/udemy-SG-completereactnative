@@ -12,7 +12,7 @@ const Header = (props) => {
     // style is used as a prop
     return (
         <View style={viewStyle}> 
-            <Text style={textStyle}>Albums!</Text>
+            <Text style={textStyle}>{props.headerText}</Text>
         </View>
     );
 };
