@@ -43,7 +43,7 @@ const AlbumDetail = ({ album }) => {
             </CardSection>
             {/* Button section */}
             <CardSection>
-                <Button />
+                <Button cuandoPresionado={() => console.log(title)} />
             </CardSection>
         </Card>
     );
