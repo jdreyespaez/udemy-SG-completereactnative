@@ -1,12 +1,13 @@
 import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 
-const Button = () => {
+// Llega como props del papá al hijo 'cuandoPresionado'
+const Button = ({cuandoPresionado}) => {
 
     const { buttonStyle, textStyle } = styles;
 
     return (
-        <TouchableOpacity style={buttonStyle}>
+        <TouchableOpacity onPress={cuandoPresionado} style={buttonStyle}>
             <Text style={textStyle}>
                 Click here.
             </Text>
