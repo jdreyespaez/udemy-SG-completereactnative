@@ -2,14 +2,14 @@ import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 
 // Llega como props del papá al hijo 'cuandoPresionado'
-const Button = ({cuandoPresionado}) => {
+const Button = ({ cuandoPresionado, children }) => {
 
     const { buttonStyle, textStyle } = styles;
 
     return (
         <TouchableOpacity onPress={cuandoPresionado} style={buttonStyle}>
             <Text style={textStyle}>
-                Click here.
+                {children}
             </Text>
         </TouchableOpacity>
     );
